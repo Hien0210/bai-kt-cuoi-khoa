@@ -1,34 +1,36 @@
-// const input = ['BINH','HUNG', 'PHUOC', 'CAO', 'KHANH'];
-// let max =  input[0].length
-// for ( let i = 0; i< input.length; i++){
-//   if(max <= input[i].length){
-//       max = input[i].length
-//   }
-// }
-// let output = [];
-// for ( let i = 0; i< input.length; i++){
-//     if (input[i].length == max) {
-//        output.push(input[i])
-//     }
-// }
-// console.log(output);
+const input = ['BINH','HUNG', 'PHUOC', 'CAO', 'KHANH'];
+let max =  input[0].length
+for ( let i = 0; i< input.length; i++){
+  if(max <= input[i].length){
+      max = input[i].length
+  }
+}
+let output = [];
+for ( let i = 0; i< input.length; i++){
+    if (input[i].length == max) {
+       output.push(input[i])
+    }
+}
+console.log(output);
 // //------bai 2------------
-// const input1 =  [60, 40, 55, 75, 64]
-// const input2 = []
-// const  input3 = []
-// for (let i = 0; i< input1.length; i=i+2){
-//      input2.push(input1[i])
-//      input3.push(input1[i+1])
-// }
-// input3.pop()
-// let a = 0; b= 0;
-// for (let i = 0; i< input2.length; i++){    
-//     a = a+ input2[i]
-// }for (let i = 0; i< input3.length; i++){
-//     b = b+ input3[i]
-// }
-// let output1 = [a,b]
-// console.log(output1);
+const input1 =  [60, 40, 55, 75, 64]
+const input2 = []
+const  input3 = []
+for (let i = 0; i< input1.length; i++){
+     if( i%2==0){
+        input2.push(input1[i])       
+     }else{
+        input3.push(input1[i])
+     }
+}
+let a = 0; b= 0;
+for (let i = 0; i< input2.length; i++){    
+    a = a+ input2[i]
+}for (let i = 0; i< input3.length; i++){
+    b = b+ input3[i]
+}
+let output1 = [a,b]
+console.log(output1);
 //--------bai 3------------
 const btn = document.querySelector('.button1')
 const btn2 = document.querySelector('.button2')

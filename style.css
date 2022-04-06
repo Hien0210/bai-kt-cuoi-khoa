@@ -1,0 +1,13 @@
+
+.color-wrapper{
+    position: absolute;
+    top:0%;
+    width: 100%;
+    height: 100vh;
+}
+body button{
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+    top:50%;
+}
